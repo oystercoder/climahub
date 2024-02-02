@@ -8,7 +8,7 @@ const Home = () => {
     backgroundImage: `url('src/assets/bg1/bg.jpg')`, // Adjust the path based on your file structure
     backgroundSize: 'fit',
     backgroundPosition: 'center',
-    minHeight: '100vh', // Ensure the container takes at least the full viewport height
+    minHeight: '10vh', // Ensure the container takes at least the full viewport height
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -19,11 +19,14 @@ const Home = () => {
 
   const sliderContainerStyle = {
     position: 'relative',
-    width: '80%', // Adjust the width of the slider container as needed
-    margin: 'auto',
-    height: '50vh', // Set the height to half of the viewport height
+    marginTop: '50px',
+    width: '50%',
+
+   
+    height: '10%', // Adjust the height as needed
     marginBottom: '20px',
   };
+  
 
   const sliderSettings = {
     dots: true,
@@ -32,6 +35,7 @@ const Home = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     position: 'absolute',
+    top:'50%',
     bottom: '0',
     width: '100%',
   };
@@ -54,6 +58,8 @@ const Home = () => {
             <div key={index}>
               <img
                 src={image}
+                width={20}
+                height={10}
                 alt={`School Day ${index + 1}`}
                 style={{ objectFit: 'contain', width: '100%', height: '100%' }}
               />

@@ -51,7 +51,9 @@ export const StateContextProvider = ({ children }) => {
       values,
       thisLocation,
       place,
-      error,
+
+     
+      
     }}>
       {children}
     </StateContext.Provider>

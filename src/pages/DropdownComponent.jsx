@@ -97,9 +97,11 @@ const DropdownComponent = ({ onSelect }) => {
         {options.map((option) => (
           <option key={option} value={option}>
             {option}
+            
           </option>
         ))}
       </select>
+      
       <div className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
         <HiCheck className="text-green-500 h-5 w-5" />
       </div>

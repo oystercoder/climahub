@@ -121,17 +121,9 @@ const Suggestions = () => {
     <div className="container mx-auto p-8">
       <div className="flex flex-col items-center">
         <div className="relative mb-4">
-          <input
-            type="text"
-            placeholder="Search options"
-            className="w-full p-3 border rounded-md shadow-sm focus:outline-none focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
+          
           <div className="absolute inset-y-0 right-0 flex items-center pl-3 pointer-events-none">
-            <button className='hover:cursor-pointer' onClick={() => { /* Handle button click here */ }}>
-              <HiSearch className="text-gray-500 h-6 w-6" />
-            </button>
+            
           </div>
         </div>
         <div className="flex flex-between">

@@ -69,6 +69,7 @@ const WeatherCard = ({
       <hr className='bg-slate-600' />
       <div className='w-full p-4 flex justify-center items-center text-3xl font-semibold'>
         {conditions}
+        
       </div>
     </div>
   )

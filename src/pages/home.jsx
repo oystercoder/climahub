@@ -105,12 +105,12 @@ const Home = () => {
 
   return (
     <div style={backgroundStyle}>
-      <h1 className='text-red-500 font-bold text-3xl lg:text-6xl'>
+      {/* <h1 className='text-red-500 font-bold text-3xl lg:text-6xl'>
         Welcome to <span className='text-black'>ClimaHub</span>
       </h1>
       <div className='text-purple-600 text-2xl '>
         Explore weather forecasts and insights tailored just for you.
-      </div>
+      </div> */}
 
       <Link to="/prescription" className='text-pink-800 font-bold hover:underline'>
         <button className='bg-pink-500 text-white font-bold py-2 px-4 rounded-full hover:bg-pink-700 hover:text-white flex items-start'>
@@ -118,7 +118,8 @@ const Home = () => {
             Want to safeguard your health
           </h2>
         </button>
-      </Link>
+        </Link>
+      
       </div>
 
       

@@ -88,9 +88,12 @@
 import { HiSearch } from 'react-icons/hi';
 import DropdownComponent from './DropdownComponent';
 import DataDisplayComponent from './DataDisplayComponent';
+import { useStateContext } from '../context';
 
 const Suggestions = () => {
-  const backgroundImageUrl = 'src/assets/bg1/stars.avif'; // Replace with your actual image URL
+  const backgroundImageUrl = 'src/assets/bg1/stars.avif';
+  const { weather, thisLocation, values, place, setPlace } = useStateContext('');
+  console.log(values); // Replace with your actual image URL
 
   const backgroundStyle = {
     backgroundImage: `url('${backgroundImageUrl}')`,

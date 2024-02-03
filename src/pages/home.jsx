@@ -1,156 +1,131 @@
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-
-const Home = () => {
-  const backgroundStyle = {
-    backgroundImage: `url('src/assets/bg1/bg.jpg')`, // Adjust the path based on your file structure
-    backgroundSize: 'fit',
-    backgroundPosition: 'center',
-    minHeight: '10vh', // Ensure the container takes at least the full viewport height
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: 'white',
-    position: 'relative',
-  };
-
-  const sliderContainerStyle = {
-    position: 'relative',
-    marginTop: '50px',
-    width: '50%',
-
-   
-    height: '10%', // Adjust the height as needed
-    marginBottom: '20px',
-  };
-  
-
-  const sliderSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    position: 'absolute',
-    top:'50%',
-    bottom: '0',
-    width: '100%',
-  };
-
-  const schoolDayImages = [
-   'src/assets/bg1/bg.jpg',
-   'src/assets/bg1/bg.jpg',
-   'src/assets/bg1/bg.jpg'
-    // Add more image paths as needed
-  ];
-
-  return (
-    <div style={backgroundStyle}>
-      <h2 className='text-black font-bold text-4xl text-left mt-0'>Welcome to ClimaHub!</h2>
-      <p className='text-black bold'>Explore weather forecasts and insights tailored just for you.</p>
-
-      <div style={sliderContainerStyle}>
-        <Slider {...sliderSettings}>
-          {schoolDayImages.map((image, index) => (
-            <div key={index}>
-              <img
-                src={image}
-                width={20}
-                height={10}
-                alt={`School Day ${index + 1}`}
-                style={{ objectFit: 'contain', width: '100%', height: '100%' }}
-              />
-            </div>
-          ))}
-        </Slider>
-      </div>
-    </div>
-  );
-};
-
-export default Home;
 // import React from 'react';
-// import Slider from 'react-slick';
-// import 'slick-carousel/slick/slick.css';
-// import 'slick-carousel/slick/slick-theme.css';
+// import { Link } from 'react-router-dom';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// const ImageSlider = ({ images }) => {
+//   const [currentImage, setCurrentImage] = useState(0);
+
+//   const goToNextImage = () => {
+//     setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+//   };
+
+//   const goToPrevImage = () => {
+//     setCurrentImage((prevImage) => (prevImage - 1 + images.length) % images.length);
+//   };
+
+//   return (
+//     <div className="image-slider">
+//       <button onClick={goToPrevImage}>Previous</button>
+//       <img src={images[currentImage]} alt={`Image ${currentImage + 1}`} />
+//       <button onClick={goToNextImage}>Next</button>
+//     </div>
+//   );
+// };
+
+
 
 // const Home = () => {
+//   const images = [
+//     'https://example1.com/image1.jpg',
+//     'https://example1.com/image2.jpg',
+//     'https://example1.com/image3.jpg',
+//   ];
+ 
+  
+//   const backgroundImageUrl = 'src/assets/bg1/bg.jpg'; // Replace with your actual image URL
+
 //   const backgroundStyle = {
-//     backgroundImage: `url('src/assets/bg1/bg.jpg')`,
-//     backgroundSize: 'cover',
+//     backgroundImage: `url('${backgroundImageUrl}')`,
+//     backgroundSize: 'fill',
 //     backgroundPosition: 'center',
 //     minHeight: '100vh',
 //     display: 'flex',
 //     flexDirection: 'column',
-//     justifyContent: 'center',
+//     justifyContent: 'left',
 //     alignItems: 'center',
 //     color: 'white',
 //     position: 'relative',
 //   };
 
-//   const sliderContainerStyle = {
-//     position: 'relative',
-//     width: '80%',
-//     maxWidth: '800px', // Set a maximum width for the slider container
-//     margin: 'auto',
-//     height: '50vh',
-//     marginBottom: '20px',
-//     overflow: 'hidden',
-//   };
-
-//   const sliderSettings = {
-//     infinite: true,
-//     speed: 500,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     arrows: true,
-//     prevArrow: <CustomPrevArrow />,
-//     nextArrow: <CustomNextArrow />,
-//   };
-
-//   const schoolDayImages = [
-//     'src/assets/bg1/bg.jpg',
-//     'src/assets/bg1/bg.jpg',
-//     'src/assets/bg1/bg.jpg',
-//     // Add more image paths as needed
-//   ];
-
-//   const CustomPrevArrow = ({ onClick }) => (
-//     <div className="slick-arrow custom-prev-arrow" onClick={onClick}>
-//       {'<'}
-//     </div>
-//   );
-
-//   const CustomNextArrow = ({ onClick }) => (
-//     <div className="slick-arrow custom-next-arrow" onClick={onClick}>
-//       {'>'}
-//     </div>
-//   );
-
 //   return (
 //     <div style={backgroundStyle}>
-//       <h2 className='text-red-700 font-bold text-7xl text-left mt-0'>Welcome to ClimaHub!</h2>
-//       <p className='text-black bold'>Explore weather forecasts and insights tailored just for you.</p>
-
-//       <div style={sliderContainerStyle}>
-//         <Slider {...sliderSettings}>
-//           {schoolDayImages.map((image, index) => (
-//             <div key={index}>
-//               <img
-//                 src={image}
-//                 alt={`School Day ${index + 1}`}
-//                 style={{ objectFit: 'contain', width: '100%', height: '100%' }}
-//               />
-//             </div>
-//           ))}
-//         </Slider>
+//       <h1 className='text-red-500 font-bold text-3xl lg:text-6xl'>
+     
+//         Welcome to <span className='text-black'>ClimaHub</span>
+//       </h1>
+//       <div className='text-purple-600 text-2xl '>
+//         Explore weather forecasts and insights tailored just for you.
 //       </div>
+
+//       <Link to="/prescription" className='text-pink-800 font-bold hover:underline'>
+//         <button className='bg-pink-500 text-white font-bold py-2 px-4 rounded-full hover:bg-pink-700 hover:text-white flex items-start'>
+//           <h2 className='text-blue-800'>
+//             Want to safeguard your health
+//           </h2>
+//         </button>
+//       </Link>
+//       <div>
+//       <h1>React Image Slider</h1>
+//       <ImageSlider images={images} />
 //     </div>
-//   );
-// };
+    
+//       )
+
+      
+      
+     
+
 
 // export default Home;
+
+
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+
+
+
+const Home = () => {
+
+
+  const backgroundImageUrl = 'src/assets/bg1/bg.jpg'; // Replace with your actual image URL
+
+  const backgroundStyle = {
+    backgroundImage: `url('${backgroundImageUrl}')`,
+    backgroundSize: 'fit', // Use 'cover' or 'contain' based on your design preference
+    backgroundPosition: 'center',
+    minHeight: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'left',
+    alignItems: 'center',
+    color: 'white',
+    position: 'relative',
+  };
+
+  return (
+    <div style={backgroundStyle}>
+      <h1 className='text-red-500 font-bold text-3xl lg:text-6xl'>
+        Welcome to <span className='text-black'>ClimaHub</span>
+      </h1>
+      <div className='text-purple-600 text-2xl '>
+        Explore weather forecasts and insights tailored just for you.
+      </div>
+
+      <Link to="/prescription" className='text-pink-800 font-bold hover:underline'>
+        <button className='bg-pink-500 text-white font-bold py-2 px-4 rounded-full hover:bg-pink-700 hover:text-white flex items-start'>
+          <h2 className='text-blue-800'>
+            Want to safeguard your health
+          </h2>
+        </button>
+      </Link>
+      </div>
+
+      
+  )
+  
+};
+
+
+export default Home;
 

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import sun from '../assets/icons/sun.png'
-import cloud from '../assets/icons/cloud.jpg'
+import cloud from '../assets/icons/cloud.png'
 import fog from '../assets/icons/fogy.png'
 import rain from '../assets/icons/umbrella.png'
 import snow from '../assets/icons/snowy.png'
 import storm from '../assets/icons/storm.png'
-import wind from '../assets/icons/cloud.jpg'
+import wind from '../assets/icons/rainyy.png'
 
 const MiniCard = ({ time, temp, iconString }) => {
   const [icon, setIcon] = useState()

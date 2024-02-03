@@ -4,6 +4,8 @@ import Home from './pages/home';
 import Overview from './pages/overview';
 import Suggestion from './pages/suggestion';
 import Header from './components/header';
+import Prescription from './pages/presciption';
+
 
 export default function App() {
   return <BrowserRouter>
@@ -13,6 +15,7 @@ export default function App() {
     <Route path="/" element={<Home />} />
     <Route path="/overview" element={<Overview />} />
     <Route path="/suggestion" element={<Suggestion />}/>
+    <Route path="/prescription" element={<Prescription />}/>
 
   </Routes>
   </BrowserRouter>

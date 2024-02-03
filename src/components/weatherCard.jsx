@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import {useDate} from '../utils/useDate'
 import sun from '../assets/icons/sun.png'
-import cloud from '../assets/icons/rainyy.jpg'
+import cloud from '../assets/icons/cloud.png'
 import fog from '../assets/icons/fogy.png'
 import rain from '../assets/icons/umbrella.png'
 import snow from '../assets/icons/snowy.png'
 import storm from '../assets/icons/storm.png'
-// import wind from '../assets/icons/windy.png'
+ import wind from '../assets/icons/rainyy.png'
 import '../index.css'
 
 const WeatherCard = ({
@@ -48,7 +48,7 @@ const WeatherCard = ({
         
       <div className='flex w-full just-center, items-center gap-4 mt-12 mb-4'>
         
-        <img src={icon} width={53} alt="weather_icon"  />
+        <img src={icon} width={55} alt="weather_icon"  />
         <p className='font-bold text-5xl flex justify-center items-center' >{temperature} &deg;C</p>
       </div>
       <div className='font-bold text-center text-xl'>

@@ -22,7 +22,7 @@ export const StateContextProvider = ({ children }) => {
         shortColumnNames: 0,
       },
       headers: {
-        'X-RapidAPI-Key':'532d755ec3mshffb939de4af68dcp18de70jsne9978c560bd9',
+        'X-RapidAPI-Key':'08c77aecc3msh20e891dc34c03d3p1937e6jsnfda26691fa75',
         'X-RapidAPI-Host': 'visual-crossing-weather.p.rapidapi.com',
       },
     };
@@ -35,7 +35,7 @@ export const StateContextProvider = ({ children }) => {
       setWeather(thisData.values[0]);
       setError(null); // Reset error if it was previously set
     } catch (e) {
-      console.error(e);
+      //console.error(e);
       setError('Error fetching weather data. Please try again.'); // Set a user-friendly error message
     }
   };

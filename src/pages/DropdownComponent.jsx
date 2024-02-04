@@ -78,7 +78,7 @@ import { HiCheck } from 'react-icons/hi'; // Import check icon from Heroicons li
 
 const DropdownComponent = ({ onSelect }) => {
   const options = ['Farmer', 'Event Planner', 'Traveler', 'Student', 'Generic'];
-  const [selectedOption, setSelectedOption] = useState(options[0]);
+  const [selectedOption, setSelectedOption] = useState('');
 
   const handleDropdownChange = (event) => {
     const selectedValue = event.target.value;
@@ -87,8 +87,8 @@ const DropdownComponent = ({ onSelect }) => {
   };
 
   return (
-    <div className="mb-4 relative bg-pink-500">
-      <label className="block text-sm font-semibold text-red-600">Choose an option:</label>
+    <div className="w-1000px bg-pink-500">
+      <label className="block text-sm font-semibold text-red-600 w-1000px">Choose an option:</label>
       <select
         value={selectedOption}
         onChange={handleDropdownChange}

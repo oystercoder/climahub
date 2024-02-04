@@ -127,9 +127,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FiSun, FiCloud } from 'react-icons/fi';
+import backgroundImageUrl from '../assets/images/Home.png';
 
 const Home = () => {
-  const backgroundImageUrl = 'src/assets/bg1/Home Screen.png'; // Replace with your pink background image URL
+  
+ // Replace with your pink background image URL
   const snowImageUrl = 'src/assets/Big snow.png'; // Replace with your snow image URL
 
   const headingStyle = {
@@ -195,4 +197,5 @@ const Home = () => {
 };
 
 export default Home;
+
 

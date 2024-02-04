@@ -1,5 +1,7 @@
 import React from 'react';
-import Chart from 'react-apexcharts';
+// import Chart from 'react-apexcharts';
+ import { Suspense, lazy } from 'react';
+ const  Chart= lazy(() => import('react-apexcharts'));
 
 const BarGraphComponent = ({ data }) => {
     const options = {
@@ -22,6 +24,8 @@ const BarGraphComponent = ({ data }) => {
 
     return (
         <div width="2000px" height="500px">
+           
+        <Suspense fallback={<p><i>Loading...</i></p>}>
             <Chart
                 options={options}
                 series={series}
@@ -29,6 +33,8 @@ const BarGraphComponent = ({ data }) => {
                 width="1000px"
                 height="500px"
             />
+            </Suspense>
+        
         </div>
     );
 };

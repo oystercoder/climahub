@@ -1,18 +1,23 @@
 import React, { useState } from 'react';
+import { Suspense, lazy } from 'react';
 import { HiSearch } from 'react-icons/hi';
-import DropdownComponent from './DropdownComponent';
+ import DropdownComponent from './DropdownComponent';
 import DataDisplayComponent from './DataDisplayComponent';
 import { useStateContext } from '../context';
+import m from '../assets/bg1/stars.avif'
+
 
 import '../pages/suggestion.css'
 
+
 const Suggestions = () => {
-  const backgroundImageUrl = 'src/assets/bg1/stars.avif';
+  
   const { weather, thisLocation, values, place, setPlace } = useStateContext('');
   console.log(values); // Replace with your actual image URL
 
   const backgroundStyle = {
-    backgroundImage: `url('${backgroundImageUrl}')`,
+    backgroundImage: `url('${m}')`,
+    
     backgroundSize: 'fit', // Use 'cover' or 'contain' based on your design preference
     backgroundPosition: 'center',
     minHeight: '100vh',
@@ -46,13 +51,21 @@ const Suggestions = () => {
           </div>
           <div className="">
             <div className="drop-down">
+            
+        <Suspense fallback={<p><i>Loading...</i></p>}>
               <DropdownComponent
                 options={filteredOptions}
                 onSelect={handleDropdownSelect}
               />
+              </Suspense>
+             
             </div>
             <div className="data-display">
+            
+        <Suspense fallback={<p><i>Loading...</i></p>}>
               <DataDisplayComponent selectedOption={selectedOption} />
+              </Suspense>
+             
             </div>
           </div>
         </div>

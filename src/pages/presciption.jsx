@@ -3,9 +3,11 @@ import { useStateContext } from '../context';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import k from '../assets/images/Cover.jpg';
 
 function Prescription() {
-  const backgroundImageUrl = 'src/assets/images/Cover.jpg';
+  
+  
   const settings = {
     dots: true,
     infinite: true,
@@ -14,7 +16,7 @@ function Prescription() {
     slidesToScroll: 1,
   };
   const backgroundStyle = {
-    backgroundImage: `url('${backgroundImageUrl}')`,
+    backgroundImage:  `url('${k}')`,
     backgroundSize: 'cover', // Use 'cover' or 'contain' based on your design preference
     backgroundPosition: 'center',
     minHeight: '100vh',

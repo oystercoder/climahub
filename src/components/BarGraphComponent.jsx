@@ -9,7 +9,7 @@ const BarGraphComponent = ({ data }) => {
         xaxis: {
             categories: data.map(item => item.datetimeStr),
         },
-        colors: ['#FFC0CB'], // Set the color to pink
+        colors: ['#AED6F1'], 
     };
 
 

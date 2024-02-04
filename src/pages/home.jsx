@@ -170,6 +170,7 @@ const Home = () => {
     <li>Beyond mere weather predictions, we provide bespoke suggestions aligned with the day's forecast.</li>
     <li>Discover personalized recommendations on what to eat 🍉, drink 🥤, optimal exercise 🏋️‍♀️, and expert tips for skincare and body care🧴.</li>
     <li> Let our insights enhance your day, tailored to the specific weather conditions.</li>
+    <li className='text-3xl color-yellow'>go to forecast for the report and insights to get personalised opinion</li>
   <li className="text-3xl text-white leading-7 ">
     Click here to explore and embrace a healthier and happier you, guided by the current weather forecast ☀️🌧️❄️.
   </li>

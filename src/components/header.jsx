@@ -253,7 +253,7 @@
 
 // export default Header;
 import React, { useState } from 'react';
-import searchIcon from '../assets/icons/search (1).svg';
+
 import { useStateContext } from '../context';
 import { FiSun, FiCloud } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
@@ -268,7 +268,7 @@ function Header() {
   }
 
   return (
-    <header className="bg-black text-white p-2 md:p-4 lg:p-5 flex flex-col md:flex-row items-center justify-between">
+    <header className="bg-black text-white p-1 md:p-4 lg:p-5 flex flex-col md:flex-row items-center justify-between">
       <Link to='/'>
         <h1 className="font-bold text-lg md:text-2xl lg:text-3xl flex items-center">
           <FiSun className="text-yellow-400 text-2xl" />
@@ -277,7 +277,7 @@ function Header() {
         </h1>
       </Link>
 
-      <div className="flex items-center justify-center mt-3 md:mt-0"> {/* Centered container for search */}
+      <div className="flex items-center justify-center w-13  mt-3 md:mt-0"> {/* Centered container for search */}
         <input
           onKeyUp={(e) => {
             if (e.key === 'Enter') {
@@ -286,25 +286,27 @@ function Header() {
           }}
           type="text"
           placeholder='Search city'
-          className='focus:outline-none text-[#212121] text-3xl md:w-64 lg:w-96 px-2 py-1'
+          className='focus:outline-none text-[#212121] text-3xl md:w-64 lg:w-96 px-2 py-1 rounded'
           value={input}
           onChange={e => setInput(e.target.value)}
         />
 
-        <button className="ml-2 p-0" onClick={submitCity}>
-          <img src="src/assets/bg1/Cloud 3 zap.png" alt="Header Image" className="w-20 h-13 object-cover" />
-        </button>
+<button className="p-0 h-13" onClick={submitCity}>
+  <img width="60px" src="src\assets\icons\search-normal.png" alt="Header Image" />
+</button>
+
       </div>
 
       <ul className='flex gap-4 justify-content:flex-end mt-3 md:mt-0'>
         <Link to='/'>
-          <li className='hidden md:inline text-2xl text-pink-300 hover:underline'>Home</li>
+        <li className='font-bold hidden md:inline text-3xl text-pink-300 hover:underline'>Home</li>
+
         </Link>
         <Link to='/overview'>
-          <li className='text-yellow-400 text-2xl hover:underline'>Forecast</li>
+          <li className='font-bold  text-yellow-400 text-3xl hover:underline'>Forecast</li>
         </Link>
         <Link to='/suggestion'>
-          <li className='text-white-800 text-2xl hover:underline'>Insights</li>
+          <li className='font-bold text-white-800 text-3xl hover:underline'>Insights</li>
         </Link>
       </ul>
     </header>

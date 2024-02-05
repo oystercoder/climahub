@@ -9,4 +9,6 @@ Currently, two official plugins are available:
 
 - output
 - ![overview](https://github.com/oystercoder/react_task/assets/97734229/1f49fa84-e957-4140-8d22-12ddcc63ddcf)
+- ![home](https://github.com/oystercoder/react_task/assets/97734229/2a6de269-90e5-4e67-8623-3c179f906972)
+
 

@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 
 import { useStateContext } from '../context';
@@ -9,9 +8,11 @@ import searchyy from '../assets/icons/search-normal.png';
 function Header() {
   const [input, setInput] = useState('');
   const { setPlace } = useStateContext('');
+  const [currentCity,setCurrentCity] = useState("")
 
   const submitCity = () => {
     setPlace(input);
+    setCurrentCity(input)
     setInput('');
   }
 
@@ -44,6 +45,13 @@ function Header() {
 </button>
 
 
+
+
+
+
+<label> {currentCity} </label>
+
+
       </div>
 
       <ul className='flex gap-4 justify-content:flex-end mt-3 md:mt-0'>
@@ -63,3 +71,5 @@ function Header() {
 }
 
 export default Header;
+
+

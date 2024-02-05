@@ -106,7 +106,7 @@ function Overview() {
 
      
         
-          <BackgroundLayout />
+      <BackgroundLayout/> <BackgroundLayout/>
         
       
 

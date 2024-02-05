@@ -35,6 +35,7 @@ const DataDisplayComponent = ({ selectedOption }) => {
         "snow": "❄️ Snowfall expected! Prepare for a winter wonderland by adding festive decorations like snowflakes and twinkling lights. ☃️ Clear pathways for safe passage and consider providing warm blankets or heaters for outdoor areas. ⛄ Create a magical atmosphere with snow-themed activities and cozy corners. 🧤❤️ Ensure guests are warmly dressed and offer hot beverages like cocoa to keep spirits high. ❄️🎄",
         "fog": "Attention event managers! 📢 The weather forecast predicts a mix of sun and clouds. Ensure a seamless event by planning for both indoor and outdoor spaces. 🌞 Set up shaded areas with cool refreshments for guests to beat the heat. In case of rain, have backup plans ready and consider tent rentals for outdoor areas. ☔ Keep attendees informed about weather updates through our app ",
         "thunderstorm": "⚠️ Be prepared for a thunderstorm at your event! Safety first – ensure all outdoor activities are temporarily halted, and guide attendees to sheltered areas. ⛈️ Implement a clear communication plan to keep everyone informed about the situation. Provide umbrellas and rain ponchos for attendees who need to move between locations. 🌂 In case of power outages, have backup generators ready.",
+        "Overcast": "",
       }
     },
     {
@@ -46,6 +47,7 @@ const DataDisplayComponent = ({ selectedOption }) => {
         "snow": "Traveler, get ready for a winter wonderland on your journey! ❄️ Pack warm layers, including a cozy jacket, gloves, and a hat, to stay comfortable in the snowy conditions. Choose sturdy boots for secure footing, and consider exploring winter-themed activities like snowboarding or building snowmen. Capture the enchanting snowy landscapes and make your travel experience truly magical. Safe and joyful travels in the snow! 🌨️✨",
         "fog": "For travelers today facing foggy conditions, exercise caution and drive at reduced speeds for enhanced safety. 🌫️ Ensure your vehicle's headlights are on low beam and maintain a safe following distance. If visibility is severely impaired, consider pulling over to a safe location until conditions improve. Stay updated on weather forecasts to plan your journey wisely and enjoy a secure and serene travel experience. Safe travels! 🚗🌐",
         "thunderstorm": "In the midst of an overcast day, travelers should anticipate varied weather conditions. ☁️ Plan accordingly by bringing a light jacket or sweater to stay comfortable. 🧥 Be flexible with outdoor activities and have a backup plan for indoor options. 🌧️ Check the weather updates to ensure a seamless and enjoyable travel experience despite the changing skies. ✈️🌍",
+        "OverCast":"",
       }
     },
     {
@@ -58,6 +60,7 @@ const DataDisplayComponent = ({ selectedOption }) => {
         "snow": "Snowy day for students! ❄️ Bundle up in warm layers and enjoy the magical winter wonderland. If classes are canceled, make the most of the day with some outdoor fun, like building snowmen ⛄ or having a friendly snowball fight. Don't forget to sip on a cup of hot cocoa ☕ as you tackle your assignments in the cozy indoors. Stay warm, stay safe, and embrace the snowy day vibes! 📚❄️",
         "fog": "Foggy day for students! 🌫️ Take extra precautions while commuting to and from classes, ensuring visibility and safety. Embrace the cozy atmosphere by spending some quiet time indoors, catching up on readings or enjoying a good book. Remember to dress warmly and carry any necessary gear for a comfortable journey. Stay focused, stay safe, and let the foggy weather create a serene backdrop for your academic pursuits! 📚🌫️",
         "thunderstorm": "Thunderstorm alert for students! ⚡ Ensure your safety by staying indoors during the storm. Avoid outdoor activities and unplug electronic devices to prevent any damage. Use this time to catch up on assignments, review notes, or indulge in a cozy study session. Keep updated on weather notifications and wait for the storm to pass. Prioritize your well-being and make the most of this opportunity to focus on academics amidst the thunder and lightning."
+        
       }
     },
     {
